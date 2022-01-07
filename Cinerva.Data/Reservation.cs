@@ -11,8 +11,8 @@ namespace Cinerva.Data
         public int Id { get; set; }
         public DateTime CheckInDate { get; set; }
         public DateTime CheckOutDate { get; set; }
-        public DateTime CancelDate { get; set; }
-        public int Price { get; set; }
+        public DateTime? CancelDate { get; set; }
+        public decimal Price { get; set; }
         public string PaymentMethod { get; set; }
         public bool PaymentStatus { get; set; }
         public int UserId { get; set; }

@@ -74,6 +74,7 @@ namespace Cinerva.Data
             modelBuilder.Entity<Room>()
                  .HasOne(x => x.RoomCategory)
                  .WithMany(x => x.Rooms)
+                 .Map
                  .HasForeignKey(x => x.RoomCategoryId);
             modelBuilder.Entity<Reservation>()
                 .HasOne(x => x.User)

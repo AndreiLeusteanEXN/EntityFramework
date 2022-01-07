@@ -10,7 +10,7 @@ namespace Cinerva.Data
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public int Rating { get; set; }
+        public decimal Rating { get; set; }
         public string Description { get; set; }
         public string Address { get; set; }
         public string Phone { get; set; }
@@ -21,9 +21,10 @@ namespace Cinerva.Data
         public int PropertyTypeId { get; set; }
         public City City { get; set; }
         public User User { get; set; }
+        public IList<Room> Rooms { get; set; }
         public PropertyType PropertyType { get; set; }
-        public ICollection<PropertyImage> PropertyImages { get; set; }
-        public ICollection<PropertyFacility> PropertyFacilities { get; set; }
-        public ICollection<Review> Reviews { get; set; }
+        public IList<PropertyImage> PropertyImages { get; set; }
+        public IList<PropertyFacility> PropertyFacilities { get; set; }
+        public IList<Review> Reviews { get; set; }
     }
 }
